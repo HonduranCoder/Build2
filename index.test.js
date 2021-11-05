@@ -1,7 +1,7 @@
 const getMethod = require('./index.js');
 
 describe('the GET method', () => {
-  it('it gets an order in the db by id', () => {
+  it('GET method', () => {
     const method = `GET / HTTP/1.1
     Host: example.com
     Accept-Language: us-en`;
