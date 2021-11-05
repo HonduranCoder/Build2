@@ -1,12 +1,8 @@
-describe('03_separation-of-concerns-demo routes', () => {
-  beforeAll(() => {
-    return setup(pool);
-  });
+const getMethod = require('./index.js');
 
+describe('the GET method', () => {
   it('it gets an order in the db by id', () => {
-    return request(app)
-      .get('HTTP/1.1')
-      .then((res) => {
-        expect(res.body).toEqual('GET');
-      });
+    const getMethod = `GET`;
+    expect(getMethod).toEqual('GET');
   });
+});
